@@ -112,6 +112,9 @@ package body Quote_Structure is
 
       end if;
 
+   exception
+      when others => -- don't faint just because a file doesn't exist
+         null;
    end Read_Quotes;
 
    function New_Quote return Quote is
