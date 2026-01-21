@@ -1,0 +1,3 @@
+[submodule "jula"]
+	path = jula
+	url = https://github.com/johnperry-math/jula/

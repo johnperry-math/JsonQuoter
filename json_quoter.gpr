@@ -1,4 +1,4 @@
-with "gnatcoll";
+with "config/json_quoter_config.gpr";
 
 library project Json_Quoter is
    for Languages use ("Ada");

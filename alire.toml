@@ -1,0 +1,16 @@
+name = "json_quoter"
+description = "Quote Library where the quotes are taken from a JSON source file"
+version = "0.1.0-dev"
+
+authors = ["John Perry"]
+maintainers = ["John Perry <devotus@yahoo.com>"]
+maintainers-logins = ["johnperry-math"]
+licenses = "CC-BY-SA-3.0"
+website = ""
+tags = ["json", "quoter", "ada"]
+
+[[depends-on]]
+jula = "*"
+
+[[pins]]
+jula = { path = "jula" }

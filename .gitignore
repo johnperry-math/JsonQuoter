@@ -1,3 +1,7 @@
 lib
 obj
 src/.clang-format
+/obj/
+/lib/
+/alire/
+/config/
