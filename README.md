@@ -6,4 +6,7 @@ while this one is reworked as a library.
 
 ## License
 
-Public domain, insofar as this is compatible with the libraries used.
+CC-BY-SA-3.0.
+This used to rely on GNATColl.JSON
+but now relies on [Jula](https://github.com/johnperry-math/jula),
+which better addresses my needs.
