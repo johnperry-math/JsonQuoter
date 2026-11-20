@@ -95,7 +95,7 @@ package body Quote_Structure is
                   Field_Value : Unbounded_String := Field_Keys (Field);
                   Key         : String := To_String (Field_Value);
                begin
-                  New_Quote.Has (Field) := Json_Quote.Mapping.Contains (Key);
+                  New_Quote.Has (Field) := Json_Quote.Contains (Key);
                   if New_Quote.Has (Field) then
                      New_Quote.Value (Field) :=
                        JSON_String (Json_Quote (Key)).Text;
@@ -171,12 +171,12 @@ package body Quote_Structure is
          begin
             for Field in Fields loop
                if Quote.Has (Field) then
-                  Node.Mapping.Include
+                  Node.Include
                     (To_String (Field_Keys (Field)),
                      JSON_String'(Text => Quote.Value (Field)));
                end if;
             end loop;
-            As_Json.Elements.Append (Node);
+            As_Json.Append (Jula.JSON (Node));
          end;
       end loop;
       Write_Quotes (As_Json, Destination);

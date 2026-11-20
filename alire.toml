@@ -13,4 +13,4 @@ tags = ["json", "quoter", "ada"]
 jula = "*"
 
 [[pins]]
-jula = { path = "jula" }
+jula = { path = "../jula" }

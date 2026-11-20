@@ -11,9 +11,16 @@ This depends on [Jula](https://github.com/johnperry-math/jula).
 ## Building
 
 To build, download [Jula](https://github.com/johnperry-math/jula) somewhere
-(link above) then add it to your `GPR_PROJECT_PATH`. For example, I have
-```bash
-export GPR_PROJECT_PATH=../jula/
+(link above), then place it at the same level as JsonQuoter.
+That is, your storage layout should be
+```text
+some_folder
+ |
+ +-- JsonQuoter
+ |
+ +-- Jula
+ |
+ ... (maybe other stuff, too)
 ```
 
 ## License
